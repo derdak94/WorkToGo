@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QRActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    app:backgroundTint="@null"
+    android:background="@color/white">
+
+    <!--<EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wpisz tekst"
+        android:padding="12dp"
+        android:background="@drawable/round_edittext"
+        android:layout_below="@id/kod_qr"
+        android:layout_marginTop="50dp"></EditText> -->
+
+
+
+    <ImageView
+        android:id="@+id/kod_qr"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"></ImageView>
+
+
+    <Button
+        android:id="@+id/przycisk_wyloguj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kod_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="Wyloguj"
+        android:background="@drawable/round_edittext"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"></Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/przycisk_wyloguj"
+        android:id="@+id/przycisk_generuj"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_edittext"
+        app:backgroundTint="@null"
+        android:layout_margin="20dp"
+        android:hint="Generuj"
+        android:textColor="@color/black"></Button>
+
+</LinearLayout>
